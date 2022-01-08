@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+#modalBody {
+    padding: 10px 20px;
+    top: 45%;
+    left: 48%;
+    transform: translate(-45%, -48%);
+    position: absolute;
+    width: 400px;
+    height: 60%;
+    background-color: rgb(70, 65, 65);
+    box-shadow: rgba(194, 6, 6, 0.8);
+}
+#simple-modal-title {
+    margin: 10px 0 20px 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+#modalBody form input {
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(34, 33, 33);
+    padding-left: 20px;
+    
+}
+#modalBody form button {
+    margin-top: 20px;
+    position: relative;
+    width: 120px;
+    margin: 20px 0 auto 10px;
+}
+#addBtnContainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+#addBtn {
+    background-color: rgba(134, 134, 134, 0.3);
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+    height: 350px;
+    opacity: .5;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#addBtn img {
+    border: none;
+}

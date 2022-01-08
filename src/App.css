@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(218, 38, 38, 0.5);
+}
+.navBar {
+  background-color: rgba(114, 6, 6, 0.5);
+  box-shadow: 0 5px 12px 8px rgba(39, 38, 38, 0.5);
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.navList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2/3;
+}
+
+.navList li {
+  list-style: none;
+}
+.navList li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.navBar form {
+  grid-template-columns: 4/5;
+  justify-self: start;
+  align-self: center;
+  margin-left: 30px;
+  display: flex;
+}
+.navBar form input {
+  height: 30px;
+  width: 180px;
+  margin: 0;
+  padding-left: 10px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 2px 2px 2px;
+}
+.navBar form button {
+  margin:0 20px;
+}
+.navBar span {
+  grid-template-columns: 3/4;
+  justify-self: end;
+  align-self: center;
+}
+.starRatingFilter {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* MovieCard */
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  justify-items: center;
+  margin: 30px 15px;
+}
+.MovieCard {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+}
+.MovieCard:hover {
+  box-shadow: 0 0 20px 1px black;
+}
+.MovieCard:hover .starRating {
+  visibility: visible;
+}
+.MovieCard:hover span {
+  visibility: visible;
+}
+.MovieCard span{
+  width: 250px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  left: calc(50%-100px);
+  background-color:rgba(0,0,0,.6) ;
+  padding-bottom: 10px;
+  box-shadow: 0 -5px 20px 10px rgba(0,0,0,.65);
+  visibility: hidden;
+}
+.starRating {
+  justify-self: flex-end;
+  align-self: flex-end;
+  z-index: 3;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  visibility: hidden;
+}
+.starRatingComp {
+  cursor: context-menu !important;
+  font-size: 20px;
+}
+
+/* responsive */
+@media (max-width:1000px){
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navList {
+    grid-column: 1/3;
+    justify-content: center;
+  }
+  .navList li {
+    margin-left: 20px;
+  }
+}
+/* description */
+.description {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: darkblue;
+}
